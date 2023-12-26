@@ -18,7 +18,7 @@ SELECT
  
 -- 2) 해당 번호를 가지지 않는 메뉴 조회
 --  SELECT * FROM tbl_menu;
-SELECT * FROM tbl_menu WHERE category_code <> 10;
+SELECT * FROM tbl_menu WHERE ctbl_menu
 SELECT * FROM tbl_menu WHERE category_code != 10;
 
 -- --------------------------------------
