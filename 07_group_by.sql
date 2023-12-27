@@ -26,15 +26,6 @@ SELECT
  HAVING SUM(menu_price) >= 24000 -- 그룹의 합계가 24000 이상
  ORDER BY 2;
  
- 
- SELECT                               
-       category_code
-	  , SUM(menu_price)                 
-  FROM tbl_menu                      
- GROUP BY category_code              
-HAVING SUM(menu_price) >= 24000
- ORDER BY 2;
- 
  -- ------------------------------------------------
  -- 메뉴가 없는 카테고리까지 셀껀지 구분해서 count 해보기
 SELECT
@@ -112,14 +103,4 @@ SELECT
 
 
 
--- ------------------
-SELECT
-       category_code -- 그룹을 묶은 컬럼을 제외함
-     , COUNT(*)  -- 모든 행 갯수 세기(그룹 함수만 가능)
-		 , COUNT(category_code) -- category_code가 null이 아닌 행만 갯수 세기
-		 , SUM(menu_price)
-		 , AVG(menu_price)
-  FROM tbl_menu
- WHERE category_code IS NOT NULL
- GROUP BY category_code;
- ORDER BY 2;
+
