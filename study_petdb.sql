@@ -74,4 +74,27 @@ SELECT
 	  , b.Type_info
 	  , a.Member_ID
   FROM information a
-  JOIN type b ON (a.Type_code = b.Type_code);      
+  JOIN type b ON (a.Type_code = b.Type_code);  
+  
+-- -----------
+-- 식당 추가 정보 기입
+INSERT
+  INTO information
+VALUES
+  (
+   '2', '츄르국밥', '서울특별시', '010-7777-7777', 'N', '2024.01.01', 1, 'yunjaeeun'
+  )
+, (
+   '3', '고양이카페', '서울특별시', '010-3508-5859', 'N', '2024.01.02', 2, 'kimjaehyeon'
+  )
+, (
+   '4', '잘자요 숙박', '부천시', '010-1417-7787', 'N', '2024.01.02', 3, 'leedeubora'
+  )
+, (
+   '5', '허준병원', '남양주시', '010-7734-3667', 'N', '2024.01.02', 4, 'backdonghyeon'
+  )
+, (
+   '6', '개껌뼈다귀해장국','광주광역시','010-7414-5798', 'N', '2024.01.02', 1, 'yunjaeeun'
+  );  
+  
+  SELECT * FROM information;
