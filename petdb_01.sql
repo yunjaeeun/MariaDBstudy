@@ -17,7 +17,7 @@ VALUES
    '010-4482-2349', 'park123@naver.com', '츄르도둑', '2021.01.01', 1, 1)
 , ('yunjaeeun', 'yun123', '윤재은', '서울특별시 관악구 신림동',
    '010-2442-5020', 'yun123@naver.com', '마제소바남', '2023.12.18',999, 5)
-, ('leebodeura', 'lee123', '이보드라', '4 Yawkey Way, Boston, MA 02215-3409',
+, ('leedeubora', 'lee123', '이드보라', '4 Yawkey Way, Boston, MA 02215-3409',
    '010-3096-6369','lee123@gmail.com', '마틸다', '2024.01.04',2, 4)
 , ('baekdonghyeon', 'baek123', '백동현','경기도 남양주시 무슨동',
    '010-4234-6905', 'baek123@yahoo.com', '운동갈꺼야', '2023.11.11', 3, 3)
@@ -25,7 +25,7 @@ VALUES
    '010-0995-6989','cho123@daum.net', '쥬라기월드', '2023.01.01', 4, 2)
 , ('kimjaehyeon', 'kim123', '김재현', '경기도 의정부시 도봉구',
    '010-2340-5309','kim123@kakao.com', '닥쳐말포이', '2022.07.04', 5, 1 )
-, ('seoseungyeop', 'seo123', '서습엽', '서울특별시 관악구 신림동',
+, ('seoseungyeop', 'seo123', '서승엽', '서울특별시 관악구 신림동',
    '010-2309-3838','seo@naver.com', '게임조아', '2023.07.04', 5, 5)
 , ('gwakyungyeong','32sX@NLd!', '곽윤경', '광주광역시 서구 동천동',
    '010-6509-9038', 'v1hdfn@naver.com', '하태서리', '2021.07.03', 3, 1)
@@ -36,35 +36,7 @@ VALUES
 , ('parkgoeunn', 'bflaCVcJs', '박고은','경기도 양주시 덕계동',
    '010-1590-5234', 'fdxrt2@yahoo.com', '지하천척', '2023.1.11', 2, 3)
 , ('baeseongmin', 'zY6kFKHbX', '배성민', '서울특별시 서대문구', 
-   '010-1822-7931','mfk5gd@daum.net', '리카솔리', '2023.05.01', 0, 2);
-
-SELECT * FROM information;
-INSERT
-  INTO information 
-VALUES
-  (NULL, '츄르맛집', '서울특별시 동작구 신대방동', '010-2341-1551', NOW(), 1, 'seoseungyeop', 1)
-, (NULL, '개껌제빵소', '광주광역시 동구 서석동', '062-432-1555', NOW(), 2, 'yunjaeeun', 2)
-, (NULL, '캣타워 호텔', '부산광역시 수영구 광안2동', '051-622-4251', NOW(), 3, 'seoseungyeop', 1)
-, (NULL, '랩터 전문 병원', '서울특별시 관악구 신림동', '02-595-5891', NOW(), 4, 'yunjaeeun', 3 )
-, (NULL, '강형욱 유치원', '경상북도 울릉군 울릉읍 저동리', '054-791-0701', NOW(), 3, 'seoseungyeop', 1);
-
-SELECT * FROM memberadmin;
-INSERT -- 회원 아이디, 사업자코드(1 = 사업자, 2 = 사업자X), 블랙코드(1 = 블랙, 2 = 블랙X), 사용여부코드(1 = 사용, 2 = 휴면 , 3 = 탈퇴) , 마지막 접속 날짜, 관리자 아이디
-  INTO memberadmin
-VALUES
-  ('yunjeaeun', 1, 2, 1, '2024.01.04', 'admin01')
-, ('kimjaehyeon', 2, 1, 1, '2023.07.04', 'admin01')
-, ('parkjungman', 2, 2, 3, '2022.01.01', 'admin01')
-, ('seoseungyeop', 1, 2, 1, '2022.01.01', 'admin01');
-
-UPDATE information
-   SET photo_code = 4
- WHERE info_code = 3;
- 
- SELECT * FROM wlop_member;
-INSERT
-  INTO wlop_Member
-VALUES 
+   '010-1822-7931','mfk5gd@daum.net', '리카솔리', '2023.05.01', 0, 2)
   ('souju','JEjKL60P1', '소우주', '부산 해운대구 해운대해변로 264',
    '010-8983-2100', 'helloItsUnivers@naver.com', 'littleUnivers', '2021.09.03', 4, 1)
 , ('sonselim', 'TewJnHAa', '손세림', '서울 용산구 남산공원길 105',
@@ -98,5 +70,27 @@ VALUES
 , ('hansohye', 'Kkz0V0pi', '한소혜','인천 연수구 아트센터대로 165',
    '010-5550-5912', 'f414mce3@yahoo.com', '가문비하늘소', NOW(), 8, 1)
 , ('kimyoungseung', 'N2VU8eaT', '김용승', '전남 완도군 화조로 119', 
-   '010-7434-8452','yun2489b@daum.net', 'DragonVicroty', '2023.12.18', 0, 5);
-   
+   '010-7434-8452','yun2489b@daum.net', 'DragonVicroty', '2023.12.18', 0, 5)
+, ('choyelin', 'gno423189!', '조예린', '서울 중구 을지로 311',
+	'010-8673-1418', 'coein231@gmail.com', '키러소루두', '2021.11.19', 1, 5)
+, ('leehyeonwo', '@!nameo2!', '이현우', '서울 동작구 신대방동',
+   '010-3491-3904', 'lehyw@nate.com', 'rpwkr', NOW(), 0, 0);
+
+SELECT * FROM information;
+INSERT
+  INTO information 
+VALUES
+  (NULL, '츄르맛집', '서울특별시 동작구 신대방동', '010-2341-1551', NOW(), 1, 'seoseungyeop', 1)
+, (NULL, '개껌제빵소', '광주광역시 동구 서석동', '062-432-1555', NOW(), 2, 'yunjaeeun', 2)
+, (NULL, '캣타워 호텔', '부산광역시 수영구 광안2동', '051-622-4251', NOW(), 3, 'seoseungyeop', 1)
+, (NULL, '랩터 전문 병원', '서울특별시 관악구 신림동', '02-595-5891', NOW(), 4, 'yunjaeeun', 3 )
+, (NULL, '강형욱 유치원', '경상북도 울릉군 울릉읍 저동리', '054-791-0701', NOW(), 3, 'seoseungyeop', 1);
+
+SELECT * FROM memberadmin;
+INSERT -- 회원 아이디, 사업자코드(1 = 사업자, 2 = 사업자X), 블랙코드(1 = 블랙, 2 = 블랙X), 사용여부코드(1 = 사용, 2 = 휴면 , 3 = 탈퇴) , 마지막 접속 날짜, 관리자 아이디
+  INTO memberadmin
+VALUES
+  ('yunjeaeun', 1, 2, 1, '2024.01.04', 'admin01')
+, ('kimjaehyeon', 2, 1, 1, '2023.07.04', 'admin01')
+, ('parkjungman', 2, 2, 3, '2022.01.01', 'admin01')
+, ('seoseungyeop', 1, 2, 1, '2022.01.01', 'admin01');
