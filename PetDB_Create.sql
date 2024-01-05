@@ -18,13 +18,14 @@ CREATE TABLE `WLOP_Type` (
 );
 
 CREATE TABLE `Review` (
-   `review_code`   int   NOT NULL PRIMARY KEY,
+   `review_code`   int   NOT NULL AUTO_INCREMENT PRIMARY KEY,
    `review_star`   int   NOT NULL,
    `review_content`   varchar(255)   NOT NULL,
    `review_updown`   int   NULL,
    `review_date`   varchar(255)   NOT NULL,
    `info_code`   int   NOT NULL,
    `review_writer`   varchar(255)   NOT NULL
+   `use_yn` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `WLOP_Comment` (
@@ -34,6 +35,7 @@ CREATE TABLE `WLOP_Comment` (
    `comment_writer`   varchar(255)   NOT NULL,
    `share_code`   int   NULL,
    `freeboard` INT NULL 
+   `use_yn` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `Information` (
@@ -44,6 +46,7 @@ CREATE TABLE `Information` (
    `info_date`   varchar(255)   NOT NULL,
    `type_code`   int   NOT NULL,
    `info_writer`   varchar(255)   NOT NULL
+   `use_yn` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `GoodsShare` (
@@ -53,6 +56,7 @@ CREATE TABLE `GoodsShare` (
    `goods_date`   varchar(255)   NOT NULL,
    `goods_writer`   varchar(255)   NOT NULL,
    `goods_category`   int   NOT NULL
+   `use_yn` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `MemberGrade` (
@@ -123,6 +127,7 @@ CREATE TABLE `Billboard` (
    `board_check`   int   NOT NULL,
    `board_recommend`   int   NOT NULL,
    `member_id`   varchar(255)   NOT NULL
+   `use_yn` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `MemberAdmin` (
